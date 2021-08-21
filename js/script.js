@@ -30,3 +30,8 @@ document.getElementById("promo-apply").addEventListener("click", function () {
     }
     promoCode.value = '';
 });
+const img = document.getElementById("macColorImg");
+function changeColor(color, id) {
+    const src = `images/` + color + `Mac.jpg`
+    img.src = src;
+}
