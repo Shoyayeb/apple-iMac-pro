@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy 24-inch iMac - Apple</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- 
+        main contents starts here
+     -->
+    <main>
+        <section class="my-12">
+            <div class="md:flex md:px-10 px-7 lg:px-18 xl:px-32">
+                <!-- 
+                    intro 
+                 -->
+                <div class="md:w-6/12">
+                    <img src="./images/mac.png" alt="">
+                </div>
+                <!-- 
+                    intro text and customization and buy section
+                 -->
+                <div class=" md:ml-16 md:w-6/12">
+                    <!--
+                         intro text section 
+                        -->
+                    <div>
+                        <h1 class="lg:text-5xl md:text-4xl text-3xl font-semibold leading-relaxed mb-4 tracking-wide">
+                            Customize your Blue 24-inch iMac with
+                            Apple M1 chip.</h1>
+                        <p class="text-base leading-relaxed text-lg tracking-wider">Apple M1 chip with 8-core CPU with 4
+                            performance cores and 4
+                            efficiency cores,
+                            7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt /
+                            USB
+                            4
+                            ports Magic Mouse Magic Keyboard - US English</p>
+                    </div>
+                    <!-- 
+                        Configuration section
+                     -->
+                    <div>
+                        <!-- memory config -->
+                        <div class="my-12">
+                            <p class="font-bold text-lg mb-3">Memory</p>
+                            <button id="8-memory"
+                                class="mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg"
+                                onclick="totalCalc(memoryCost, 0)">8GB
+                                unified memory</button id="">
+                            <button onclick="totalCalc(memoryCost, 180)" id="16-memory"
+                                class="mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">16GB
+                                unified memory</button id="">
+                        </div>
+                        <!-- storage config -->
+                        <div class="my-12">
+                            <p class="font-bold text-lg mb-3">Storage</p>
+                            <button onclick="totalCalc(storageCost, 0)" id="256-ssd"
+                                class=" mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">256GB
+                                SSD storage</button id="">
+                            <button onclick="totalCalc(storageCost, 100)" id="512-ssd"
+                                class=" mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">512GB
+                                SSD storage</button id="">
+                            <button onclick="totalCalc(storageCost, 180)" id="1tb-ssd"
+                                class=" mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">1TB
+                                SSD storage</button id="">
+                        </div>
+                        <!-- delivery selection -->
+                        <div class="my-12">
+                            <p class="font-bold text-lg mb-3">Choose your delivery option</p>
+                            <button onclick="totalCalc(deleveryCost, 0);" id="free-delevery"
+                                class="mx-0 my-1 focus:bg-gray-100 md:mb-0 mb-4 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">Friday,
+                                Aug 25 FREE Prime Delivery</button id="">
+                            <button onclick="totalCalc(deleveryCost, 20);" id="charge-delevery"
+                                class="mx-0 my-1 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">Monday,
+                                Aug 21 Delivery charge $20</button id="">
+                        </div>
+                    </div>
+                    <!-- 
+                        buy section
+                     -->
+                    <div>
+                        <table class="md:w-4/5 lg:w-3/5 w-4/5">
+                            <tbody class="font-semibold text-xl leading-loose">
+                                <tr class="border-b-2  ">
+                                    <td>Best Price</td>
+                                    <td>$<span id="best-cost">1299</span></td>
+                                </tr>
+                                <tr class="border-b-2  ">
+                                    <td>Extra Memory Cost</td>
+                                    <td>$<span id="memory-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b-2  ">
+                                    <td>Extra Storage Cost</td>
+                                    <td>$<span id="storage-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b-2   border-black">
+                                    <td>Delevery charge</td>
+                                    <td>$<span id="delevery-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b-2  ">
+                                    <td>Total Price</td>
+                                    <td>$<span id="total-cost">1299</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 
+                            promo code section
+                         -->
+                        <div>
+                            <h4 class="text-lg my-4 font-medium">Add Promo Code</h4>
+                            <input type="text" name="promoCode" id="promo-code" required
+                                class="rounded w-2/6 px-3 py-2 border border-gray-300 focus:outline-none focus:border-red-300 focus:border-4 sm:text-sm">
+                            <button id="promo-apply"
+                                class=" py-2 px-5 hover:bg-red-600  focus:bg-red-600 rounded text-white bg-red-500">Apply</button
+                                id="">
+                            <h4 id="promo-error" class="hidden text-red-500 text-lg my-4 font-small">Promo Code not
+                                found !</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 
+        footer starts here
+     -->
+    <footer>
+        <hr class="w-5/6 m-auto">
+        <h1 class="text-center text-5xl">Total: $<span id="footer-total">1299</span></h1>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
