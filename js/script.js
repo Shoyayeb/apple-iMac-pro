@@ -31,7 +31,8 @@ document.getElementById("promo-apply").addEventListener("click", function () {
     promoCode.value = '';
 });
 const img = document.getElementById("macColorImg");
-function changeColor(color, id) {
+function changeColor(color) {
     const src = `images/` + color + `Mac.jpg`
     img.src = src;
+    document.getElementById("macColorText").innerText = color;
 }
