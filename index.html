@@ -21,7 +21,7 @@
      -->
     <main>
         <section class="my-12">
-            <div class="md:flex md:px-10 px-7 lg:px-18 xl:px-32">
+            <div class="md:flex px-2 lg:px-18 xl:px-32">
                 <!-- 
                     intro 
                  -->
@@ -49,19 +49,19 @@
                     </div>
                     <div class="md:mt-10 mt-4">
                         <button onclick="changeColor(`blue`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-blue-500 bg-blue-400 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-blue-500 bg-blue-400 mx-2"></button>
                         <button onclick="changeColor(`green`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-green-500 bg-green-400 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-green-500 bg-green-400 mx-2"></button>
                         <button onclick="changeColor(`orange`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-red-500 bg-red-300 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-red-500 bg-red-300 mx-2"></button>
                         <button onclick="changeColor(`pink`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-pink-500 bg-pink-400 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-pink-500 bg-pink-400 mx-2"></button>
                         <button onclick="changeColor(`purple`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-purple-500 bg-purple-400 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-purple-500 bg-purple-400 mx-2"></button>
                         <button onclick="changeColor(`silver`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-gray-500 bg-gray-400 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-gray-500 bg-gray-400 mx-2"></button>
                         <button onclick="changeColor(`yellow`)"
-                            class="focus:border-gray-300 border-2 rounded-full h-6 w-6 focus:bg-yellow-500 bg-yellow-400 mx-2"></button>
+                            class="focus:border-gray-300 border-2 rounded-full h-8 w-8 lg:h-6 lg:w-6 focus:bg-yellow-500 bg-yellow-400 mx-2"></button>
                     </div>
                     <!-- 
                         Configuration section
@@ -71,24 +71,24 @@
                         <div class="my-12">
                             <p class="font-bold text-lg mb-3">Memory</p>
                             <button id="8-memory"
-                                class="mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg"
+                                class="mx-0 my-1 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg"
                                 onclick="totalCalc(memoryCost, 0)">8GB
                                 unified memory</button id="">
                             <button onclick="totalCalc(memoryCost, 180)" id="16-memory"
-                                class="mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">16GB
+                                class="mx-0 my-1 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">16GB
                                 unified memory</button id="">
                         </div>
                         <!-- storage config -->
                         <div class="my-12">
                             <p class="font-bold text-lg mb-3">Storage</p>
                             <button onclick="totalCalc(storageCost, 0)" id="256-ssd"
-                                class=" mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">256GB
+                                class="mx-0 my-1 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">256GB
                                 SSD storage</button id="">
                             <button onclick="totalCalc(storageCost, 100)" id="512-ssd"
-                                class=" mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">512GB
+                                class="mx-0 my-1 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">512GB
                                 SSD storage</button id="">
                             <button onclick="totalCalc(storageCost, 180)" id="1tb-ssd"
-                                class=" mx-2 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">1TB
+                                class="mx-0 my-1 focus:bg-gray-100 hover:bg-gray-100 border-2 border-gray-400 focus:border-blue-300 p-2 rounded-lg">1TB
                                 SSD storage</button id="">
                         </div>
                         <!-- delivery selection -->
